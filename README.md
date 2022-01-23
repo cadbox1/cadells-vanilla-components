@@ -2,10 +2,8 @@
 
 ## Commands
 
-- `yarn start` - start rollup dev server.
-- `yarn storybook` - start storybook. run this in another terminal, in addition to yarn start.
-- `yarn analyze` - bundle size stats.
-- `yarn test` - run the rests.
+- `yarn build` - Build the package.
+- `yarn publish` - Publish a new version to NPM.
 
 ## Use with NextJS
 
