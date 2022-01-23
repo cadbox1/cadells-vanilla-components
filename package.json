@@ -7,15 +7,14 @@
   "module": "dist/cadells-vanilla-components.esm.js",
   "typings": "dist/index.d.ts",
   "files": [
-    "dist",
-    "src"
+    "dist"
   ],
   "engines": {
     "node": ">=10"
   },
   "scripts": {
     "build": "node build.js",
-    "publish": "np"
+    "release": "np"
   },
   "peerDependencies": {
     "@mdx-js/loader": ">=1.6",
