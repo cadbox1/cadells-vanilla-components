@@ -3,7 +3,7 @@
 ## Commands
 
 - `yarn build` - Build the package.
-- `yarn publish` - Publish a new version to NPM.
+- `yarn release` - Publish a new version to NPM.
 
 ## Use with NextJS
 
