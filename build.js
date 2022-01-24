@@ -6,7 +6,7 @@ const { dependencies, peerDependencies } = require("./package.json");
 const shared = {
 	entryPoints: ["src/index.ts"],
 	bundle: true,
-	minify: true,
+	minify: false,
 	sourcemap: true,
 	plugins: [vanillaExtractPlugin()],
 	external: Object.keys(dependencies).concat(Object.keys(peerDependencies)),

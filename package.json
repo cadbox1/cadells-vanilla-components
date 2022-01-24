@@ -5,10 +5,7 @@
   "license": "MIT",
   "main": "dist/index.js",
   "module": "dist/cadells-vanilla-components.esm.js",
-  "typings": "dist/index.d.ts",
-  "files": [
-    "dist"
-  ],
+  "types": "dist/index.d.ts",
   "engines": {
     "node": ">=10"
   },
@@ -23,7 +20,7 @@
   },
   "size-limit": [
     {
-      "path": "dist/cadells-vanilla-components.cjs.production.min.js",
+      "path": "dist/index.js",
       "limit": "10 KB"
     },
     {

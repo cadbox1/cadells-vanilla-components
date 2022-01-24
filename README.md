@@ -3,7 +3,7 @@
 ## Commands
 
 - `yarn build` - Build the package.
-- `yarn release` - Publish a new version to NPM.
+- `npm run release` - Publish a new version to NPM.
 
 ## Use with NextJS
 
@@ -12,3 +12,7 @@
 https://nextjs.org/docs/advanced-features/using-mdx#setup-nextmdx-in-nextjs
 https://vanilla-extract.style/documentation/setup/#nextjs
 
+## References
+https://github.com/seek-oss/vanilla-extract/discussions/281
+https://souporserious.com/bundling-typescript-with-esbuild-for-npm/
+https://github.com/sindresorhus/np
