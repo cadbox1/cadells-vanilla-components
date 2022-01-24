@@ -15,6 +15,7 @@ const shared = {
 build({
 	...shared,
 	outfile: "dist/index.js",
+    format: 'cjs',
 }).catch(() => process.exit(1));
 
 build({
