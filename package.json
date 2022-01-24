@@ -6,6 +6,10 @@
   "main": "dist/index.js",
   "module": "dist/cadells-vanilla-components.esm.js",
   "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
   "engines": {
     "node": ">=10"
   },
