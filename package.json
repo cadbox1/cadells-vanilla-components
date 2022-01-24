@@ -4,17 +4,16 @@
   "version": "0.3.2",
   "license": "MIT",
   "main": "dist/index.js",
-  "module": "dist/cadells-vanilla-components.esm.js",
+  "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
   "files": [
-    "dist",
-    "src"
+    "dist"
   ],
   "engines": {
     "node": ">=10"
   },
   "scripts": {
-    "build": "node build.js",
+    "build": "tsup",
     "release": "np"
   },
   "peerDependencies": {
@@ -41,12 +40,11 @@
     "@types/react-dom": "^17.0.11",
     "@vanilla-extract/css": "^1.6.8",
     "@vanilla-extract/esbuild-plugin": "^2.0.2",
-    "esbuild": "^0.14.13",
     "np": "^7.6.0",
-    "npm-dts": "^1.3.10",
     "prettier": "^2.5.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "tsup": "^5.11.11",
     "typescript": "^4.5.5"
   }
 }
