@@ -1,7 +1,7 @@
 {
   "name": "cadells-vanilla-components",
   "author": "Cadell Christo",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "license": "MIT",
   "main": "dist/index.js",
   "module": "dist/cadells-vanilla-components.esm.js",
