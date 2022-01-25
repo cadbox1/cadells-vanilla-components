@@ -1,6 +1,10 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import { themeToggleClass, lightThemeClass, darkThemeClass } from "./styles.css";
+import {
+	themeToggleClass,
+	lightThemeClass,
+	darkThemeClass,
+} from "./styles.css";
 
 type Themes = { [key: string]: { class: string; label: string } };
 
@@ -61,7 +65,11 @@ function getInlineScript(themes: Themes) {
 })()`;
 }
 
-export const InitialiseTheme = ({ themes }: { themes: Themes }) => {
+export const InitialiseTheme = ({
+	themes = defaultThemes,
+}: {
+	themes?: Themes;
+}) => {
 	return (
 		<script
 			dangerouslySetInnerHTML={{ __html: getInlineScript(themes) }}
@@ -69,7 +77,11 @@ export const InitialiseTheme = ({ themes }: { themes: Themes }) => {
 	);
 };
 
-export const ThemeToggle = ({ themes = defaultThemes }: { themes?: Themes }) => {
+export const ThemeToggle = ({
+	themes = defaultThemes,
+}: {
+	themes?: Themes;
+}) => {
 	const [currentTheme, setCurrentTheme] = useState(`default`);
 
 	useEffect(() => {
