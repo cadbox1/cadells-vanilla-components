@@ -69,7 +69,7 @@ export const InitialiseTheme = ({ themes }: { themes: Themes }) => {
 	);
 };
 
-export const ThemeToggle = ({ themes = defaultThemes }: { themes: Themes }) => {
+export const ThemeToggle = ({ themes = defaultThemes }: { themes?: Themes }) => {
 	const [currentTheme, setCurrentTheme] = useState(`default`);
 
 	useEffect(() => {
