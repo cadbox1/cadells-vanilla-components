@@ -13,7 +13,7 @@ It uses [tsup](https://github.com/egoist/tsup) and [np](https://github.com/sindr
 
 1. Add cadells-vanilla-components.
     ```
-    yarn add cadells-vanilla-components
+    yarn add cadells-vanilla-components @fontsource/source-sans-pro
     ```
 1. Add MDX dependencies.
     ```
@@ -72,6 +72,8 @@ It uses [tsup](https://github.com/egoist/tsup) and [np](https://github.com/sindr
     ```
     import { Container, ThemeToggle } from "cadells-vanilla-components";
     import "cadells-vanilla-components/dist/index.css";
+    import "@fontsource/source-sans-pro/400.css";
+    import "@fontsource/source-sans-pro/600.css";
 
     const App = ({ Component, pageProps }) => (
         <MdxProvider>
