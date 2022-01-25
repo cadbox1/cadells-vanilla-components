@@ -17,7 +17,7 @@
     "release": "np"
   },
   "peerDependencies": {
-    "@mdx-js/loader": ">=1.6",
+    "@mdx-js/react": ">=1.6",
     "react": ">=16"
   },
   "size-limit": [
@@ -34,7 +34,7 @@
     "slugify": "^1.6.5"
   },
   "devDependencies": {
-    "@mdx-js/loader": "^1.6.22",
+    "@mdx-js/react": "^1.6.22",
     "@types/react": "^17.0.38",
     "@types/react-dom": "^17.0.11",
     "@vanilla-extract/css": "^1.6.8",

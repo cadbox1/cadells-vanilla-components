@@ -74,10 +74,12 @@ It uses [tsup](https://github.com/egoist/tsup) and [np](https://github.com/sindr
     import "cadells-vanilla-components/dist/index.css";
 
     const App = ({ Component, pageProps }) => (
-        <Container>
-            <ThemeToggle />
-            <Component {...pageProps} />
-        </Container>
+        <MdxProvider>
+            <Container>
+                <ThemeToggle />
+                <Component {...pageProps} />
+            </Container>
+        </MdxProvider>
     );
 
     export default App;
