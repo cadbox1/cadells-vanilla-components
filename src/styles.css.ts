@@ -81,7 +81,6 @@ export const fontBase = style({
 export const baseClass = style([
 	fontBase,
 	{
-		fontSize: "18px",
 		lineHeight: "1.6",
 	},
 ]);
@@ -89,6 +88,7 @@ export const baseClass = style([
 export const pClass = style([
 	baseClass,
 	{
+		fontSize: "18px",
 		marginTop: "0",
 		marginBottom: "12px",
 	},
@@ -151,17 +151,20 @@ export const imgClass = style({
 	maxWidth: "100%",
 });
 
-export const buttonClass = style([fontBase, {
-    padding: "6px 12px",
-    border: `2px solid ${vars.color.muted}`,
-    borderRadius: "6px",
-    fontSize: "16px",
-    fontWeight: 600,
-    backgroundColor: "transparent",
-    cursor: "pointer",
-    boxShadow: "none",
-    appearance: "none",
-}])
+export const buttonClass = style([
+	fontBase,
+	{
+		padding: "6px 12px",
+		border: `2px solid ${vars.color.muted}`,
+		borderRadius: "6px",
+		fontSize: "16px",
+		fontWeight: 600,
+		backgroundColor: "transparent",
+		cursor: "pointer",
+		boxShadow: "none",
+		appearance: "none",
+	},
+]);
 
 export const themeToggleClass = style({
 	fontSize: "24px",
