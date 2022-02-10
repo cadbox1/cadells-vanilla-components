@@ -11,6 +11,8 @@ It uses [tsup](https://github.com/egoist/tsup) and [np](https://github.com/sindr
 
 ## Use with NextJS
 
+[Cadell's NextJS Template](https://github.com/cadbox1/cadells-nextjs-template) uses this package.
+
 1. Add cadells-vanilla-components.
     ```
     yarn add cadells-vanilla-components @fontsource/source-sans-pro

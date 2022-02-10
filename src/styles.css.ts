@@ -39,7 +39,7 @@ globalStyle(`body`, {
 export const containerClass = style({
 	maxWidth: "800px",
 	margin: "0 auto",
-	padding: "0 18px",
+	padding: "0 18px 48px",
 	background: vars.color.background,
 });
 
@@ -151,8 +151,19 @@ export const imgClass = style({
 	maxWidth: "100%",
 });
 
+export const buttonClass = style([fontBase, {
+    padding: "6px 12px",
+    border: `2px solid ${vars.color.muted}`,
+    borderRadius: "6px",
+    fontSize: "16px",
+    fontWeight: 600,
+    backgroundColor: "transparent",
+    cursor: "pointer",
+    boxShadow: "none",
+    appearance: "none",
+}])
+
 export const themeToggleClass = style({
-	float: "right",
 	fontSize: "24px",
 	padding: "2px 8px",
 	borderWidth: "3px",
@@ -163,9 +174,34 @@ export const themeToggleClass = style({
 	userSelect: "none",
 });
 
+const navAnchorMargin = 8;
+
+export const navClass = style({
+	display: "flex",
+	alignItems: "center",
+	margin: `12px ${-navAnchorMargin}px 0`,
+});
+
+export const navAnchorClass = style([
+	aClass,
+	{
+		margin: `0 ${navAnchorMargin}px`,
+		fontSize: "18px",
+		fontWeight: 600,
+		color: vars.color.text,
+	},
+]);
+
+export const themeToggleHeaderClass = style([
+	themeToggleClass,
+	{
+		marginLeft: "auto",
+	},
+]);
+
 export const headingAnchorClass = style({
 	float: "left",
-	marginLeft: "-13px",
+	marginLeft: "-17px",
 	textDecoration: "none",
 });
 
@@ -174,8 +210,9 @@ export const headingAnchorSpanClass = style({
 	verticalAlign: "middle",
 	visibility: "hidden",
 	selectors: {
-		[`${headingClass}:hover ${headingAnchorClass} &, ${headingClass}:focus ${headingAnchorClass} &`]: {
-			visibility: "visible",
-		},
+		[`${headingClass}:hover ${headingAnchorClass} &, ${headingClass}:focus ${headingAnchorClass} &`]:
+			{
+				visibility: "visible",
+			},
 	},
 });

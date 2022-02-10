@@ -79,8 +79,10 @@ export const InitialiseTheme = ({
 
 export const ThemeToggle = ({
 	themes = defaultThemes,
+	className = themeToggleClass,
 }: {
 	themes?: Themes;
+	className?: string;
 }) => {
 	const [currentTheme, setCurrentTheme] = useState(`default`);
 
@@ -101,7 +103,7 @@ export const ThemeToggle = ({
 	};
 
 	return (
-		<button onClick={handleSetTheme} className={themeToggleClass}>
+		<button onClick={handleSetTheme} className={className}>
 			{themes[nextTheme].label}
 		</button>
 	);
