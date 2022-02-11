@@ -70,6 +70,7 @@ export const h3Class = style([
 	{
 		fontSize: "21px",
 		marginTop: "24px",
+		marginBottom: "8px",
 	},
 ]);
 

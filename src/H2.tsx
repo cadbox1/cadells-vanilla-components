@@ -14,9 +14,11 @@ export const H2 = ({ children, ...props }: { children: React.ReactNode }) => {
 
 	return (
 		<h2 className={h2Class} id={id} {...props}>
-			<a href={`#${id}`} className={headingAnchorClass}>
-				<span className={headingAnchorSpanClass}>🔗</span>
-			</a>
+			{id && (
+				<a href={`#${id}`} className={headingAnchorClass}>
+					<span className={headingAnchorSpanClass}>🔗</span>
+				</a>
+			)}
 			{children}
 		</h2>
 	);
