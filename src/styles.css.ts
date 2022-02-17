@@ -104,6 +104,7 @@ export const aClass = style([
 ]);
 
 export const ulClass = style({
+	fontSize: "18px",
 	margin: "0 0 12px 0",
 	paddingLeft: "32px",
 	selectors: {
@@ -114,6 +115,7 @@ export const ulClass = style({
 });
 
 export const olClass = style({
+	fontSize: "18px",
 	margin: "0 0 12px 0",
 	paddingLeft: "32px",
 	selectors: {
