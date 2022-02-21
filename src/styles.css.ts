@@ -107,6 +107,7 @@ export const ulClass = style({
 	fontSize: "18px",
 	margin: "0 0 12px 0",
 	paddingLeft: "32px",
+	listStyleType: "disc",
 	selectors: {
 		[`ul &, ol &`]: {
 			margin: 0,
