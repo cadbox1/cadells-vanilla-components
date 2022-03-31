@@ -94,7 +94,12 @@ References:
 - https://nextjs.org/docs/advanced-features/using-mdx#setup-nextmdx-in-nextjs
 - https://vanilla-extract.style/documentation/setup/#nextjs
 
-## Roadmap
+## Implementation
+I've built NextJS apps with MDX and custom components for projects like [prawn.cadell.dev](https://prawn.cadell.dev) before but I wanted to split this out into a separate package for [emojis.cadell.dev](https://emojis.cadell.dev). This is the result! I also created [template.cadell.dev](https://template.cadell.dev) as a template for showing how to use it. 
+
+Creating this package was a bit harder than first thought but I'm happy with the result and I think [emojis.cadell.dev](https://emojis.cadell.dev) looks great. I originally tried using [tsdx](https://github.com/jaredpalmer/tsdx) but the typescript types weren't correct and I couldn't work out why. I decided to change direction and started looking for a tool based on [esbuild](https://github.com/evanw/esbuild) instead of [Rollup](https://github.com/rollup/rollup) and found [tsup](https://github.com/egoist/tsup) which pretty much worked out of the box. Happy days! Tsdx did introduce me to [np](https://github.com/sindresorhus/np) for publishing to NPM so I kept that and it works really well. Everything happened for a reason.
+
+## Todo
 1. Storybook.
 1. Tests.
 
