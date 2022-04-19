@@ -34,6 +34,8 @@ globalStyle(`body`, {
 	margin: 0,
 	boxSizing: "border-box",
 	background: vars.color.background,
+	fontFamily: vars.font.body,
+	color: vars.color.text,
 });
 
 export const containerClass = style({
@@ -74,17 +76,9 @@ export const h3Class = style([
 	},
 ]);
 
-export const fontBase = style({
-	fontFamily: vars.font.body,
-	color: vars.color.text,
+export const baseClass = style({
+	lineHeight: "1.6",
 });
-
-export const baseClass = style([
-	fontBase,
-	{
-		lineHeight: "1.6",
-	},
-]);
 
 export const pClass = style([
 	baseClass,
@@ -155,20 +149,17 @@ export const imgClass = style({
 	maxWidth: "100%",
 });
 
-export const buttonClass = style([
-	fontBase,
-	{
-		padding: "6px 12px",
-		border: `2px solid ${vars.color.muted}`,
-		borderRadius: "6px",
-		fontSize: "16px",
-		fontWeight: 600,
-		backgroundColor: "transparent",
-		cursor: "pointer",
-		boxShadow: "none",
-		appearance: "none",
-	},
-]);
+export const buttonClass = style({
+	padding: "6px 12px",
+	border: `2px solid ${vars.color.muted}`,
+	borderRadius: "6px",
+	fontSize: "16px",
+	fontWeight: 600,
+	backgroundColor: "transparent",
+	cursor: "pointer",
+	boxShadow: "none",
+	appearance: "none",
+});
 
 export const themeToggleClass = style({
 	fontSize: "24px",
