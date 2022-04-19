@@ -120,12 +120,7 @@ export const olClass = style({
 	},
 });
 
-export const liClass = style([
-	baseClass,
-	{
-		fontFamily: vars.font.body,
-	},
-]);
+export const liClass = style([baseClass]);
 
 export const preClass = style({
 	fontSize: "14px",
