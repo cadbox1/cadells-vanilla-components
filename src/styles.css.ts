@@ -42,6 +42,7 @@ export const containerClass = style({
 	maxWidth: "800px",
 	margin: "0 auto",
 	padding: "0 18px 48px",
+	overflowWrap: "break-word",
 	background: vars.color.background,
 });
 
