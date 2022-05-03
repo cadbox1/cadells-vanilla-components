@@ -150,6 +150,7 @@ export const buttonClass = style({
 	border: `2px solid ${vars.color.muted}`,
 	borderRadius: "6px",
 	fontFamily: "inherit",
+	color: "inherit",
 	fontSize: "16px",
 	fontWeight: 600,
 	backgroundColor: "transparent",
