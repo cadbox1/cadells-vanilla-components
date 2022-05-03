@@ -149,6 +149,7 @@ export const buttonClass = style({
 	padding: "6px 12px",
 	border: `2px solid ${vars.color.muted}`,
 	borderRadius: "6px",
+	fontFamily: "inherit",
 	fontSize: "16px",
 	fontWeight: 600,
 	backgroundColor: "transparent",
