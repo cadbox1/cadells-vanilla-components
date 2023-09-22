@@ -48,17 +48,14 @@ export const containerClass = style({
 });
 
 export const headingClass = style({
-	marginTop: "32px",
-	marginBottom: "12px",
-	fontFamily: vars.font.heading,
-	fontWeight: "bold",
-	color: vars.color.text,
+	lineHeight: 1.5
 });
 
 export const h1Class = style([
 	headingClass,
 	{
 		fontSize: "28px",
+		marginTop: "32px",
 		marginBottom: "12px"
 	},
 ]);
@@ -67,6 +64,7 @@ export const h2Class = style([
 	headingClass,
 	{
 		fontSize: "24px",
+		marginTop: "24px",
 		marginBottom: "10px"
 	},
 ]);
