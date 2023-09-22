@@ -73,7 +73,7 @@ export const h3Class = style([
 	headingClass,
 	{
 		fontSize: "20px",
-		marginTop: "16px",
+		marginTop: "10px",
 		marginBottom: "3px",
 	},
 ]);
