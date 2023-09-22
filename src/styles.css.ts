@@ -35,6 +35,7 @@ globalStyle(`body`, {
 	boxSizing: "border-box",
 	background: vars.color.background,
 	fontFamily: vars.font.body,
+	fontSize: "17px",
 	color: vars.color.text,
 });
 
@@ -57,7 +58,8 @@ export const headingClass = style({
 export const h1Class = style([
 	headingClass,
 	{
-		fontSize: "34px",
+		fontSize: "28px",
+		marginBottom: "12px"
 	},
 ]);
 
@@ -65,15 +67,16 @@ export const h2Class = style([
 	headingClass,
 	{
 		fontSize: "24px",
+		marginBottom: "10px"
 	},
 ]);
 
 export const h3Class = style([
 	headingClass,
 	{
-		fontSize: "21px",
-		marginTop: "24px",
-		marginBottom: "8px",
+		fontSize: "20px",
+		marginTop: "16px",
+		marginBottom: "3px",
 	},
 ]);
 
@@ -84,9 +87,9 @@ export const baseClass = style({
 export const pClass = style([
 	baseClass,
 	{
-		fontSize: "18px",
+		fontSize: "17px",
 		marginTop: "0",
-		marginBottom: "12px",
+		marginBottom: "1rem",
 	},
 ]);
 
@@ -99,7 +102,6 @@ export const aClass = style([
 ]);
 
 export const ulClass = style({
-	fontSize: "18px",
 	margin: "0 0 12px 0",
 	paddingLeft: "32px",
 	listStyleType: "disc",
@@ -111,7 +113,6 @@ export const ulClass = style({
 });
 
 export const olClass = style({
-	fontSize: "18px",
 	margin: "0 0 12px 0",
 	paddingLeft: "32px",
 	selectors: {
@@ -182,7 +183,6 @@ export const navAnchorClass = style([
 	aClass,
 	{
 		margin: `0 ${navAnchorMargin}px`,
-		fontSize: "18px",
 		fontWeight: 600,
 		color: vars.color.text,
 	},
