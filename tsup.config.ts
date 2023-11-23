@@ -1,6 +1,6 @@
 import { defineConfig } from "tsup";
 import { vanillaExtractPlugin } from "@vanilla-extract/esbuild-plugin";
-import { dependencies, peerDependencies } from "./package.json";
+import { dependencies } from "./package.json";
 
 export default defineConfig({
 	entry: ["src/index.ts"],
@@ -14,6 +14,5 @@ export default defineConfig({
 	target: "node12",
 	platform: "browser",
 	esbuildPlugins: [vanillaExtractPlugin()],
-	external: Object.keys(dependencies).concat(Object.keys(peerDependencies)),
 	clean: true,
 });

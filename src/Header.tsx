@@ -4,10 +4,8 @@ import { navAnchorClass, navClass, themeToggleHeaderClass } from "./styles.css";
 
 export const Header = ({
 	githubHref = "https://github.com/cadbox1",
-	twitterHref = "https://twitter.com/cadellchristo",
 }: {
 	githubHref?: string;
-	twitterHref?: string;
 }) => {
 	return (
 		<nav className={navClass}>
@@ -16,9 +14,6 @@ export const Header = ({
 			</a>
 			<a href={githubHref} className={navAnchorClass}>
 				GitHub
-			</a>
-			<a href={twitterHref} className={navAnchorClass}>
-				Twitter
 			</a>
 			<ThemeToggle className={themeToggleHeaderClass} />
 		</nav>
