@@ -19,9 +19,9 @@ It uses [tsup](https://github.com/egoist/tsup) and [np](https://github.com/sindr
     ```
 1. Add MDX dependencies.
     ```
-    npm install --save-dev @next/mdx @mdx-js/loader @mdx-js/react
+    npm install --save-dev @next/mdx
     ```
-1. (Optional) Add vanilla-extract dependencies.
+1. Add vanilla-extract dependencies.
     ```
     npm install --save-dev @vanilla-extract/css @vanilla-extract/next-plugin
     ```
@@ -73,27 +73,32 @@ It uses [tsup](https://github.com/egoist/tsup) and [np](https://github.com/sindr
 1. Configure `_app.tsx` inside `/pages`.
     ```
     import { Container, ThemeToggle } from "cadells-vanilla-components";
-    import { MDXProvider } from "@mdx-js/react";
     import "cadells-vanilla-components/dist/index.css";
     import "@fontsource/source-sans-pro/400.css";
     import "@fontsource/source-sans-pro/600.css";
 
     const App = ({ Component, pageProps }) => (
-        <MDXProvider components={mdComponents}>
-            <Container>
-                <ThemeToggle />
-                <Component {...pageProps} />
-            </Container>
-        </MDXProvider>
+        <Container>
+            <ThemeToggle />
+            <Component {...pageProps} />
+        </Container>
     );
 
     export default App;
+    ```
+1. Create `mdx-components.tsx`.
+    ```
+    import { mdComponents } from "cadells-vanilla-components";
+
+    export function useMDXComponents(components) {
+        return mdComponents;
+    }
     ```
 
 
 References:
 - https://nextjs.org/docs/advanced-features/using-mdx#setup-nextmdx-in-nextjs
-- https://vanilla-extract.style/documentation/setup/#nextjs
+- https://vanilla-extract.style/documentation/integrations/next/
 
 ## Implementation
 I've built NextJS apps with MDX and custom components for projects like [prawn.cadell.dev](https://prawn.cadell.dev) before but I wanted to split this out into a separate package for [emojis.cadell.dev](https://emojis.cadell.dev). This is the result! I also created [template.cadell.dev](https://template.cadell.dev) as a template for showing how to use it. 
