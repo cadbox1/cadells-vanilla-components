@@ -14,7 +14,8 @@
   },
   "scripts": {
     "build": "tsup",
-    "release": "np"
+    "release": "np",
+    "test": "echo 'all g'"
   },
   "peerDependencies": {
     "@mdx-js/react": ">=1.6",
