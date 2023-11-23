@@ -8,7 +8,7 @@ export * from "./H3";
 export * from "./Header";
 export * from "./IMG";
 export * from "./LI";
-export * from "./MdxProvider";
+export * from "./mdComponents";
 export * from "./OL";
 export * from "./P";
 export * from "./PRE";

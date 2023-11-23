@@ -1,6 +1,4 @@
 import React from "react";
-// @ts-ignore
-import { MDXProvider } from "@mdx-js/react";
 
 import { H1 } from "./H1";
 import { H2 } from "./H2";
@@ -14,7 +12,7 @@ import { OL } from "./OL";
 import { PRE } from "./PRE";
 import { CODE } from "./CODE";
 
-const mdComponents = {
+export const mdComponents = {
 	h1: (props: any) => <H1 {...props} />,
 	h2: (props: any) => <H2 {...props} />,
 	h3: (props: any) => <H3 {...props} />,
@@ -27,14 +25,3 @@ const mdComponents = {
 	inlineCode: (props: any) => <CODE {...props} />,
 	img: (props: any) => <IMG {...props} />,
 };
-
-export const MdxProvider = ({
-	children,
-	...props
-}: {
-	children: React.ReactNode;
-}) => (
-	<MDXProvider components={mdComponents} {...props}>
-		{children}
-	</MDXProvider>
-);

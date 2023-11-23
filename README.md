@@ -73,17 +73,18 @@ It uses [tsup](https://github.com/egoist/tsup) and [np](https://github.com/sindr
 1. Configure `_app.tsx` inside `/pages`.
     ```
     import { Container, ThemeToggle } from "cadells-vanilla-components";
+    import { MDXProvider } from "@mdx-js/react";
     import "cadells-vanilla-components/dist/index.css";
     import "@fontsource/source-sans-pro/400.css";
     import "@fontsource/source-sans-pro/600.css";
 
     const App = ({ Component, pageProps }) => (
-        <MdxProvider>
+        <MDXProvider components={mdComponents}>
             <Container>
                 <ThemeToggle />
                 <Component {...pageProps} />
             </Container>
-        </MdxProvider>
+        </MDXProvider>
     );
 
     export default App;
