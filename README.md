@@ -8,6 +8,7 @@ It uses [tsup](https://github.com/egoist/tsup) and [np](https://github.com/sindr
 
 - `npm run build` - Build the package.
 - `npm run release` - Publish a new version to NPM.
+- `npm run build-release` - Build and Publish to NPM.
 
 ## Use with NextJS
 
