@@ -6,7 +6,7 @@ It uses [tsup](https://github.com/egoist/tsup) and [np](https://github.com/sindr
 
 ## Commands
 
-- `yarn build` - Build the package.
+- `npm run build` - Build the package.
 - `npm run release` - Publish a new version to NPM.
 
 ## Use with NextJS
@@ -15,15 +15,15 @@ It uses [tsup](https://github.com/egoist/tsup) and [np](https://github.com/sindr
 
 1. Add cadells-vanilla-components.
     ```
-    yarn add cadells-vanilla-components @fontsource/source-sans-pro
+    npm install cadells-vanilla-components @fontsource/source-sans-pro
     ```
 1. Add MDX dependencies.
     ```
-    yarn add --dev @next/mdx @mdx-js/loader
+    npm install --save-dev @next/mdx @mdx-js/loader @mdx-js/react
     ```
 1. (Optional) Add vanilla-extract dependencies.
     ```
-    yarn add --dev @vanilla-extract/css @vanilla-extract/babel-plugin @vanilla-extract/next-plugin
+    npm install --save-dev @vanilla-extract/css @vanilla-extract/next-plugin
     ```
 1. Setup `next.config.js`.
     ```
