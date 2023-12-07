@@ -106,7 +106,7 @@ export const aClass = style([
 
 export const olClass = style({
 	marginTop: "6px",
-	marginBottom: "12px",
+	marginBottom: "16px",
 	marginLeft: "0",
 	marginRight: "0",
 	paddingLeft: "32px",
