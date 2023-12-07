@@ -48,7 +48,7 @@ export const containerClass = style({
 });
 
 export const headingClass = style({
-	lineHeight: 1.5
+	lineHeight: 1.5,
 });
 
 export const h1Class = style([
@@ -56,7 +56,7 @@ export const h1Class = style([
 	{
 		fontSize: "28px",
 		marginTop: "32px",
-		marginBottom: "12px"
+		marginBottom: "12px",
 	},
 ]);
 
@@ -65,7 +65,7 @@ export const h2Class = style([
 	{
 		fontSize: "24px",
 		marginTop: "24px",
-		marginBottom: "10px"
+		marginBottom: "6px",
 	},
 ]);
 
@@ -74,7 +74,7 @@ export const h3Class = style([
 	{
 		fontSize: "20px",
 		marginTop: "10px",
-		marginBottom: "3px",
+		marginBottom: "6px",
 	},
 ]);
 
@@ -87,7 +87,7 @@ export const pClass = style([
 	{
 		fontSize: "17px",
 		marginTop: "0",
-		marginBottom: "1rem",
+		marginBottom: "16px",
 	},
 ]);
 
@@ -99,26 +99,29 @@ export const aClass = style([
 	},
 ]);
 
-export const ulClass = style({
-	margin: "0 0 12px 0",
+export const olClass = style({
+	marginTop: "6px",
+	marginBottom: "12px",
+	marginLeft: "0",
+	marginRight: "0",
 	paddingLeft: "32px",
 	listStyleType: "disc",
 	selectors: {
 		[`ul &, ol &`]: {
 			margin: 0,
 		},
-	},
-});
-
-export const olClass = style({
-	margin: "0 0 12px 0",
-	paddingLeft: "32px",
-	selectors: {
-		[`ul &, ol &`]: {
-			margin: 0,
+		[`${pClass} + &`]: {
+			marginTop: "-10px !important", // 16px margin bottom on p minus 10px equals the default 6px
 		},
 	},
 });
+
+export const ulClass = style([
+	olClass,
+	{
+		listStyleType: "disc",
+	},
+]);
 
 export const liClass = style([baseClass]);
 
