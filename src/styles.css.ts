@@ -65,7 +65,7 @@ export const h2Class = style([
 	{
 		fontSize: "24px",
 		marginTop: "24px",
-		marginBottom: "6px",
+		marginBottom: "4px",
 	},
 ]);
 
@@ -74,7 +74,7 @@ export const h3Class = style([
 	{
 		fontSize: "20px",
 		marginTop: "10px",
-		marginBottom: "6px",
+		marginBottom: "4px",
 	},
 ]);
 
@@ -105,7 +105,7 @@ export const aClass = style([
 ]);
 
 export const olClass = style({
-	marginTop: "6px",
+	marginTop: "4px",
 	marginBottom: "16px",
 	marginLeft: "0",
 	marginRight: "0",
@@ -116,7 +116,7 @@ export const olClass = style({
 			margin: 0,
 		},
 		[`${pClass} + &`]: {
-			marginTop: "-10px !important", // 16px margin bottom on p minus 10px equals the default 6px
+			marginTop: "-12px !important", // 16px margin bottom on p minus 12px equals the default 4px
 		},
 	},
 });
