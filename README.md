@@ -91,7 +91,7 @@ It uses [tsup](https://github.com/egoist/tsup) and [np](https://github.com/sindr
     ```
     import { mdComponents } from "cadells-vanilla-components";
 
-    export function useMDXComponents(components) {
+    export function useMDXComponents() {
         return mdComponents;
     }
     ```

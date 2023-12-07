@@ -88,6 +88,11 @@ export const pClass = style([
 		fontSize: "17px",
 		marginTop: "0",
 		marginBottom: "16px",
+		selectors: {
+			"li > &": {
+				marginBottom: 0,
+			},
+		},
 	},
 ]);
 
